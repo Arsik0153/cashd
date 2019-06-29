@@ -1,3 +1,3 @@
-import sayHello from './lib/sayHello';
+import Rellax from 'rellax'
 
-sayHello();
+const rell = new Rellax('.rellax');

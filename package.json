@@ -76,6 +76,7 @@
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
+    "rellax": "^1.10.0",
     "stylelint-selector-bem-pattern": "^2.1.0"
   }
 }
