@@ -1,4 +1,42 @@
 body
 	color: #000
-	font-family: "SF UI light";
+	font-family: "SF UI medium";
 	box-sizing: border-box
+
+.container
+	width: 100%
+	padding: 0 300px
+
+@media screen and (max-width: 1024px)
+  .container
+	  padding: 0 150px
+    
+@media screen and (max-width:768px)
+  .container
+	  padding: 0 50px
+    
+@media screen and (max-width: 480px)
+  .container
+	  padding: 0 20px
+    
+
+.project-title
+	display: flex
+	margin-top: 67px
+	
+
+	& p
+		font-size: 18px
+		color: #9BA3BE
+	& .year
+		margin-right: 30%
+
+@media screen and (max-width: 768px)
+	.project-title
+		margin-top: 40px
+
+.project-name
+	font-size: 36px
+	color: #181818
+	margin-top: 30vh
+	font-family: "SF UI light"
