@@ -1,7 +1,42 @@
+html
+	scroll-behavior: smooth
+	overflow-x: hidden
+	cursor: none
+
+*,
+*::after,
+*::before 
+	box-sizing: border-box
+
+img
+	pointer-events: none
+
 body
 	color: #000
-	font-family: "SF UI medium";
+	font-family: "SF UI medium"
 	box-sizing: border-box
+	padding: 0
+	margin: 0
+
+.overlay
+	margin: 0
+	padding: 0
+	position: fixed
+	height: 100vh
+	width: 100%
+	background-color: black
+	color: #fff
+	margin-top: -67px
+	z-index: 998
+	display: flex
+	align-items: center
+	justify-content: center
+
+	& h1
+		position: absolute
+		display: none
+	& .active
+		display: block
 
 .container
 	width: 100%
@@ -34,6 +69,8 @@ body
 @media screen and (max-width: 768px)
 	.project-title
 		margin-top: 40px
+	.overlay
+		margin-top: -40px
 
 .project-name
 	font-size: 36px
@@ -57,7 +94,7 @@ body
 		width: 100%
 		
 .comment
-	background: #F6F6F7;
+	background: #F6F6F7
 	padding-top: 150px
 	padding-bottom: 150px
 	margin-top: -120px
@@ -76,6 +113,35 @@ body
 	padding: 100px 0
 	display: flex
 	justify-content: space-around
+	flex-wrap: wrap
 
 	& .screen
 		width: 20vw
+
+@media screen and (max-width: 768px)
+	.screens .screen
+		width: 300px
+
+.cursor
+	pointer-events: none
+	width: 4px
+	height: 4px
+	border: 1px solid black
+	background-color: black
+	opacity: 1
+	border-radius: 50%
+	position: absolute
+	z-index: 9999
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+
+.cursor2
+	pointer-events: none
+	width: 50px
+	height: 50px
+	border: 1px solid black
+	opacity: .4
+	border-radius: 50%
+	position: absolute
+	z-index: 9999
+	transition-duration: 900ms
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
