@@ -50,6 +50,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-prettify": "^0.5.0",
     "gulp-rename": "^1.4.0",
+    "gulp-replace-image-src": "^1.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svgmin": "^1.2.0",

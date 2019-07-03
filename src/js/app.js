@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
   TweenMax.to(".active", 1, {
     y: -100,
     opacity: 0,
-    delay: 0.2
+    delay: 0.4
   });
 
   TweenMax.to(".nonactive", 1, {
